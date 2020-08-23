@@ -18,6 +18,10 @@ class PostDetailView(DetailView):
     model = Post
     template_name = 'post_detail.html'
 
+class UserDetailView(DetailView):
+    model = InstaUser
+    template_name = 'user_detail.html'
+
 class PostCreateView(LoginRequiredMixin,CreateView):
     model = Post
     template_name = 'post_create.html'
