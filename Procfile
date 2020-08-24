@@ -1,0 +1,1 @@
+web: gunicorn Ins-Sample.wsgi
